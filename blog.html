@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Área de Consultoría | NexoVector Tech</title>
-<meta name="description" content="Áreas de consultoría de NexoVector Tech: telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria y automatización.">
+<title>Blog | NexoVector Tech</title>
+<meta name="description" content="Blog de NexoVector Tech: artículos sobre telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria y automatización.">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,6 @@
 </head>
 <body>
 
-<!-- ===== NAVBAR ===== -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-nexo">
   <div class="container">
     <a class="navbar-brand navbar-brand-nexo" href="index.html">
@@ -28,7 +27,7 @@
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="consultoria.html" id="ddConsultoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Área de Consultoría</a>
+          <a class="nav-link dropdown-toggle" href="consultoria.html" id="ddConsultoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Área de Consultoría</a>
           <ul class="dropdown-menu" aria-labelledby="ddConsultoria">
             <li><a class="dropdown-item" href="consultoria.html#telecomunicaciones"><i class="bi bi-broadcast me-2"></i>Telecomunicaciones</a></li>
             <li><a class="dropdown-item" href="consultoria.html#electronica"><i class="bi bi-cpu me-2"></i>Electrónica</a></li>
@@ -60,7 +59,7 @@
             <li><a class="dropdown-item" href="cursos.html#industria">Industria y Automatización</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="macro-proyectos.html">Macro-proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
         <li class="nav-item dropdown">
@@ -80,169 +79,77 @@
   </div>
 </nav>
 
-<!-- ===== PAGE HEADER ===== -->
 <header class="page-header container">
-  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Área de Consultoría</nav>
-  <span class="eyebrow">// Nuestros dominios técnicos</span>
-  <h1>Área de Consultoría</h1>
-  <p class="section-lead">Seis áreas de conocimiento integradas para acompañar la estrategia tecnológica de tu organización de punta a punta.</p>
+  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Blog</nav>
+  <span class="eyebrow">// Ideas &amp; tendencias</span>
+  <h1>Blog</h1>
+  <p class="section-lead">Artículos técnicos sobre las áreas en las que trabajamos.</p>
 </header>
 
-<!-- ===== ÁREAS ===== -->
 <section class="section">
   <div class="container">
+    <div class="blog-filters reveal">
+      <button class="filter-chip active" data-filter="todos">Todos</button>
+      <button class="filter-chip" data-filter="telecomunicaciones">Telecomunicaciones</button>
+      <button class="filter-chip" data-filter="ciberseguridad">Ciberseguridad</button>
+      <button class="filter-chip" data-filter="iot">IoT</button>
+      <button class="filter-chip" data-filter="ti">TI</button>
+      <button class="filter-chip" data-filter="industria">Industria</button>
+    </div>
 
-    <div class="area-block reveal" id="telecomunicaciones">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-broadcast"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Telecomunicaciones</h2>
-          <span class="tag-pill">Redes &amp; Conectividad</span>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="telecomunicaciones">
+          <div class="blog-thumb"><i class="bi bi-broadcast"></i></div>
+          <div class="blog-meta">TELECOMUNICACIONES · 5 min de lectura</div>
+          <h3>El futuro de las redes 5G en entornos industriales</h3>
+          <p>Cómo la conectividad de baja latencia está redefiniendo la automatización de procesos.</p>
         </div>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Diseñamos, evaluamos y optimizamos infraestructura de telecomunicaciones para garantizar cobertura, capacidad y continuidad del servicio, desde redes de datos hasta enlaces inalámbricos y transmisión.</p>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="ciberseguridad">
+          <div class="blog-thumb"><i class="bi bi-shield-lock"></i></div>
+          <div class="blog-meta">CIBERSEGURIDAD · 6 min de lectura</div>
+          <h3>Buenas prácticas para proteger infraestructura crítica</h3>
+          <p>Un enfoque práctico para reducir riesgos en sistemas industriales conectados.</p>
         </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Diseño y dimensionamiento de redes</li>
-            <li>Auditoría de infraestructura de telecomunicaciones</li>
-            <li>Enlaces inalámbricos y transmisión de datos</li>
-            <li>Planes de continuidad y disponibilidad</li>
-          </ul>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="iot">
+          <div class="blog-thumb"><i class="bi bi-diagram-3"></i></div>
+          <div class="blog-meta">IOT · 4 min de lectura</div>
+          <h3>IoT industrial: de los sensores a la toma de decisiones</h3>
+          <p>Claves para diseñar una arquitectura IoT escalable y segura.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="ti">
+          <div class="blog-thumb"><i class="bi bi-hdd-network"></i></div>
+          <div class="blog-meta">TI · 5 min de lectura</div>
+          <h3>Gobierno de TI: alineando tecnología y estrategia</h3>
+          <p>Por qué la gestión de infraestructura TI debe partir de los objetivos del negocio.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="industria">
+          <div class="blog-thumb"><i class="bi bi-gear-wide-connected"></i></div>
+          <div class="blog-meta">INDUSTRIA · 7 min de lectura</div>
+          <h3>Manufactura inteligente: automatización con propósito</h3>
+          <p>Cómo priorizar qué procesos automatizar primero en una planta industrial.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="telecomunicaciones">
+          <div class="blog-thumb"><i class="bi bi-broadcast-pin"></i></div>
+          <div class="blog-meta">TELECOMUNICACIONES · 4 min de lectura</div>
+          <h3>Cómo auditar la infraestructura de conectividad de tu empresa</h3>
+          <p>Una guía inicial para identificar cuellos de botella en tu red.</p>
         </div>
       </div>
     </div>
-
-    <div class="area-block reveal" id="electronica">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-cpu"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Electrónica</h2>
-          <span class="tag-pill">Diseño &amp; Integración</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Asesoría en diseño, selección e integración de sistemas electrónicos aplicados a proyectos industriales, académicos y comerciales, con foco en confiabilidad y eficiencia energética.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Diseño de circuitos y prototipado</li>
-            <li>Selección de componentes y sistemas embebidos</li>
-            <li>Pruebas de calidad y confiabilidad</li>
-            <li>Eficiencia energética en sistemas electrónicos</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="ciberseguridad">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-shield-lock"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Ciberseguridad</h2>
-          <span class="tag-pill">Protección &amp; Continuidad</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Evaluamos riesgos, fortalecemos infraestructura crítica y acompañamos la implementación de buenas prácticas de seguridad de la información alineadas a estándares internacionales.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Análisis de vulnerabilidades y riesgos</li>
-            <li>Políticas y gobierno de seguridad de la información</li>
-            <li>Protección de infraestructura crítica</li>
-            <li>Planes de respuesta a incidentes</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="ti">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-hdd-network"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Tecnología de la Información</h2>
-          <span class="tag-pill">Arquitectura &amp; Gobierno TI</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Apoyamos la planificación y gobierno de la infraestructura tecnológica: arquitectura de sistemas, gestión de proyectos TI y alineación entre tecnología y objetivos estratégicos.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Arquitectura de sistemas e infraestructura</li>
-            <li>Gobierno y gestión de proyectos TI</li>
-            <li>Migración y modernización tecnológica</li>
-            <li>Continuidad de negocio y respaldo de datos</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="iot">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-diagram-3"></i></div>
-        <div>
-          <h2 class="h3 mb-1">IoT (Internet de las Cosas)</h2>
-          <span class="tag-pill">Sensórica &amp; Conectividad</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Diseñamos ecosistemas de dispositivos conectados: sensores, gateways y plataformas de monitoreo para captura y análisis de datos en tiempo real.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Arquitectura de soluciones IoT</li>
-            <li>Integración de sensores y dispositivos</li>
-            <li>Plataformas de monitoreo y visualización</li>
-            <li>Seguridad en dispositivos conectados</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="industria">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-gear-wide-connected"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Industria y Automatización</h2>
-          <span class="tag-pill">Manufactura Inteligente</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Acompañamos procesos de automatización industrial, integración de sistemas de control y adopción de manufactura inteligente para optimizar productividad y calidad.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Automatización de procesos industriales</li>
-            <li>Sistemas de control y supervisión (SCADA)</li>
-            <li>Integración con IoT industrial</li>
-            <li>Optimización de líneas de producción</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="section section-alt">
-  <div class="container text-center reveal">
-    <h2>¿Listo para llevar tu proyecto al siguiente nivel?</h2>
-    <p class="section-lead mx-auto">Conversemos sobre las necesidades tecnológicas de tu organización.</p>
-    <a href="contacto.html" class="btn-nexo-primary">Contactar a un experto</a>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
 <footer class="site-footer">
   <div class="container">
     <div class="row g-4">

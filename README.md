@@ -1,217 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eventos | NexoVector Tech</title>
-<meta name="description" content="Regístrate a los próximos eventos y actividades de NexoVector Tech.">
-<link rel="icon" type="image/svg+xml" href="img/logo.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+# NexoVector Tech — Sitio Web
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-nexo">
-  <div class="container">
-    <a class="navbar-brand navbar-brand-nexo" href="index.html">
-      <img src="img/logo.svg" alt="Logo NexoVector Tech" class="brand-mark">
-      <span>NexoVector Tech<span class="brand-sub">Consultoría Estratégica</span></span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Abrir menú">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navMain">
-      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="consultoria.html" id="ddConsultoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Área de Consultoría</a>
-          <ul class="dropdown-menu" aria-labelledby="ddConsultoria">
-            <li><a class="dropdown-item" href="consultoria.html#telecomunicaciones"><i class="bi bi-broadcast me-2"></i>Telecomunicaciones</a></li>
-            <li><a class="dropdown-item" href="consultoria.html#electronica"><i class="bi bi-cpu me-2"></i>Electrónica</a></li>
-            <li><a class="dropdown-item" href="consultoria.html#ciberseguridad"><i class="bi bi-shield-lock me-2"></i>Ciberseguridad</a></li>
-            <li><a class="dropdown-item" href="consultoria.html#ti"><i class="bi bi-hdd-network me-2"></i>Tecnología de la Información</a></li>
-            <li><a class="dropdown-item" href="consultoria.html#iot"><i class="bi bi-diagram-3 me-2"></i>IoT</a></li>
-            <li><a class="dropdown-item" href="consultoria.html#industria"><i class="bi bi-gear-wide-connected me-2"></i>Industria y Automatización</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="oferta-laboral.html" id="ddEmpleo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Oferta Laboral</a>
-          <ul class="dropdown-menu" aria-labelledby="ddEmpleo">
-            <li><a class="dropdown-item" href="oferta-laboral.html#telecomunicaciones">Telecomunicaciones</a></li>
-            <li><a class="dropdown-item" href="oferta-laboral.html#electronica">Electrónica</a></li>
-            <li><a class="dropdown-item" href="oferta-laboral.html#ciberseguridad">Ciberseguridad</a></li>
-            <li><a class="dropdown-item" href="oferta-laboral.html#ti">Tecnología de la Información</a></li>
-            <li><a class="dropdown-item" href="oferta-laboral.html#iot">IoT</a></li>
-            <li><a class="dropdown-item" href="oferta-laboral.html#industria">Industria y Automatización</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="cursos.html" id="ddCursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos Profesionales</a>
-          <ul class="dropdown-menu" aria-labelledby="ddCursos">
-            <li><a class="dropdown-item" href="cursos.html#telecomunicaciones">Telecomunicaciones</a></li>
-            <li><a class="dropdown-item" href="cursos.html#electronica">Electrónica</a></li>
-            <li><a class="dropdown-item" href="cursos.html#ciberseguridad">Ciberseguridad</a></li>
-            <li><a class="dropdown-item" href="cursos.html#ti">Tecnología de la Información</a></li>
-            <li><a class="dropdown-item" href="cursos.html#iot">IoT</a></li>
-            <li><a class="dropdown-item" href="cursos.html#industria">Industria y Automatización</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="macro-proyectos.html">Macro-proyectos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="contacto.html" id="ddContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddContacto">
-            <li><a class="dropdown-item" href="contacto.html#correo"><i class="bi bi-envelope me-2"></i>Correo</a></li>
-            <li><a class="dropdown-item" href="contacto.html#redes"><i class="bi bi-share me-2"></i>Redes sociales</a></li>
-            <li><a class="dropdown-item" href="contacto.html#foro"><i class="bi bi-chat-dots me-2"></i>Foro de comentarios</a></li>
-            <li><a class="dropdown-item" href="https://www.linkedin.com/in/jean-carlo-cruz-fajardo-537061153/" target="_blank" rel="noopener"><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
-          </ul>
-        </li>
-        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-          <a class="btn-nav-cta" href="#registro">Registrarme a un evento</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+Sitio web corporativo de **NexoVector Tech**, empresa de consultoría estratégica en Telecomunicaciones, Electrónica, Ciberseguridad, Tecnología de la Información, IoT e Industria y Automatización.
 
-<header class="page-header container">
-  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Eventos</nav>
-  <span class="eyebrow">// Agenda NexoVector</span>
-  <h1>Eventos y actividades</h1>
-  <p class="section-lead">Conoce nuestros próximos eventos y regístrate para asistir.</p>
-</header>
+## 📁 Estructura del proyecto
 
-<!-- ===== PRÓXIMOS EVENTOS ===== -->
-<section class="section">
-  <div class="container">
-    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Próximos eventos</span></div>
-    <div class="row g-3">
-      <div class="col-lg-8 reveal">
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">14</span><span class="mon">Ago</span></div>
-          <div><h4 class="h5 mb-1">Webinar: Ciberseguridad en Infraestructura Crítica</h4><p class="text-muted-custom small mb-0">Modalidad virtual · 18:00 (GMT-5)</p></div>
-        </div>
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">02</span><span class="mon">Sep</span></div>
-          <div><h4 class="h5 mb-1">Taller práctico: Arquitecturas IoT para Industria 4.0</h4><p class="text-muted-custom small mb-0">Modalidad híbrida · Cupos limitados</p></div>
-        </div>
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">20</span><span class="mon">Sep</span></div>
-          <div><h4 class="h5 mb-1">Foro: Telecomunicaciones y Ciudades Inteligentes</h4><p class="text-muted-custom small mb-0">Modalidad presencial</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+```
+nexovector-tech/
+├── index.html              Página principal (misión, visión, CEO, video, áreas, contacto, foro)
+├── consultoria.html        Detalle de las 6 áreas de consultoría
+├── contacto.html           Contacto completo + foro de comentarios
+├── oferta-laboral.html     Vacantes por área + formulario de postulación
+├── cursos.html             Cursos profesionales por área + formulario de inscripción
+├── blog.html               Artículos técnicos con filtros por categoría
+├── macro-proyectos.html    Ciudades inteligentes y sistemas tecnológicos
+├── eventos.html            Próximos eventos + formulario de registro
+├── css/
+│   └── styles.css          Hoja de estilos compartida (vinculada en las 8 páginas)
+├── js/
+│   └── main.js              Interactividad compartida (navbar, foro, validación, animaciones)
+├── img/
+│   └── logo.svg              Logo de la marca (nodos conectados)
+└── video/
+    └── README.txt            Instrucciones para agregar el video corporativo
+```
 
-<!-- ===== FORMULARIO DE REGISTRO ===== -->
-<section class="section section-alt" id="registro">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 reveal">
-        <div class="node-divider"><span class="dot"></span><span class="eyebrow">Registro</span></div>
-        <h2 class="section-title">Formulario de registro a eventos</h2>
-        <p class="section-lead">Completa tus datos para reservar tu cupo en el evento de tu interés.</p>
-        <form class="form-nexo row g-3" data-validate novalidate>
-          <div class="col-md-6">
-            <label for="eName">Nombre completo</label>
-            <input type="text" class="form-control" id="eName" required minlength="3" placeholder="Tu nombre">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eEmail">Correo electrónico</label>
-            <input type="email" class="form-control" id="eEmail" required placeholder="correo@ejemplo.com">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eTel">Teléfono</label>
-            <input type="tel" class="form-control" id="eTel" required placeholder="+593 999 999 999">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eEmpresa">Empresa u organización</label>
-            <input type="text" class="form-control" id="eEmpresa" required minlength="2" placeholder="Nombre de tu empresa">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-12">
-            <label for="eEvento">Evento al que deseas asistir</label>
-            <select class="form-select" id="eEvento" required>
-              <option value="">Selecciona un evento</option>
-              <option>Webinar: Ciberseguridad en Infraestructura Crítica — 14 Ago</option>
-              <option>Taller práctico: Arquitecturas IoT para Industria 4.0 — 02 Sep</option>
-              <option>Foro: Telecomunicaciones y Ciudades Inteligentes — 20 Sep</option>
-            </select>
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn-nexo-primary">Confirmar registro</button>
-            <div class="form-success-msg">¡Registro confirmado! Te esperamos en el evento.</div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+## 🚀 Publicar en GitHub Pages
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-4">
-        <a class="navbar-brand-nexo d-flex mb-3" href="index.html">
-          <img src="img/logo.svg" alt="Logo NexoVector Tech" class="brand-mark">
-          <span>NexoVector Tech</span>
-        </a>
-        <p class="text-muted-custom small">Consultoría estratégica en telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria &amp; automatización.</p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/profile.php?id=100077255801380" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.linkedin.com/in/jean-carlo-cruz-fajardo-537061153/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:nexovector.consultoria.tech@gmail.com" aria-label="Correo"><i class="bi bi-envelope"></i></a>
-          <a href="https://portafoliojeancruz.framer.website/" target="_blank" rel="noopener" aria-label="Portafolio"><i class="bi bi-briefcase"></i></a>
-        </div>
-      </div>
-      <div class="col-6 col-lg-2">
-        <h5>Empresa</h5>
-        <ul>
-          <li><a href="index.html#mision-vision">Misión y visión</a></li>
-          <li><a href="index.html#ceo">CEO</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="macro-proyectos.html">Macro-proyectos</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-3">
-        <h5>Consultoría</h5>
-        <ul>
-          <li><a href="consultoria.html#telecomunicaciones">Telecomunicaciones</a></li>
-          <li><a href="consultoria.html#ciberseguridad">Ciberseguridad</a></li>
-          <li><a href="consultoria.html#iot">IoT</a></li>
-          <li><a href="consultoria.html#industria">Industria y Automatización</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-lg-3">
-        <h5>Participa</h5>
-        <ul>
-          <li><a href="oferta-laboral.html">Oferta laboral</a></li>
-          <li><a href="cursos.html">Cursos profesionales</a></li>
-          <li><a href="eventos.html">Eventos</a></li>
-          <li><a href="contacto.html#foro">Foro de comentarios</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 NexoVector Tech. Todos los derechos reservados.</span>
-      <span>Ing. Jean Carlo Cruz Fajardo, MSc. — CEO</span>
-    </div>
-  </div>
-</footer>
+1. Crea un repositorio nuevo en GitHub, por ejemplo `nexovector-tech`.
+2. Sube **todo el contenido de esta carpeta** (no la carpeta contenedora) a la raíz del repositorio.
+3. Ve a **Settings → Pages**.
+4. En "Source", selecciona la rama `main` y la carpeta `/ (root)`.
+5. Guarda. En un par de minutos tu sitio estará disponible en:
+   `https://<tu-usuario>.github.io/nexovector-tech/`
 
-<button class="back-to-top" aria-label="Volver arriba"><i class="bi bi-arrow-up"></i></button>
+## 🎬 Agregar el video corporativo
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/main.js"></script>
-</body>
-</html>
+Revisa las instrucciones detalladas en `video/README.txt`. Puedes usar un video de YouTube (recomendado) o subir un archivo .mp4 al repositorio.
+
+## 💬 Foro de comentarios
+
+El foro (en `index.html` y `contacto.html`) guarda los mensajes en el `localStorage` del navegador de cada visitante — es una solución 100% estática, sin backend. Si más adelante quieres que los comentarios sean compartidos entre todos los visitantes, se puede conectar a un servicio externo (Firebase, Formspree, Supabase, etc.).
+
+## 📝 Formularios
+
+Todos los formularios (foro, contacto, postulación laboral, inscripción a cursos, registro a eventos) tienen validación en tiempo real en el navegador. Actualmente no envían datos a un servidor: para recibir esta información por correo puedes conectar un servicio como Formspree, Web3Forms o Google Forms, o desarrollar un backend propio.
+
+## 🎨 Personalización
+
+Todos los colores, tipografías y espaciados están centralizados como variables CSS al inicio de `css/styles.css` (sección `:root`), por lo que puedes cambiar la paleta de toda la web editando unas pocas líneas.
+
+## 📬 Contacto
+
+- Correo: nexovector.consultoria.tech@gmail.com
+- Facebook: https://www.facebook.com/profile.php?id=100077255801380
+- LinkedIn: https://www.linkedin.com/in/jean-carlo-cruz-fajardo-537061153/
+- Portafolio: https://portafoliojeancruz.framer.website/
+
+---
+© 2026 NexoVector Tech — Ing. Jean Carlo Cruz Fajardo, MSc. (CEO)
