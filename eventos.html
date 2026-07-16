@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Eventos | NexoVector Tech</title>
-<meta name="description" content="Regístrate a los próximos eventos y actividades de NexoVector Tech.">
+<title>Blog | NexoVector Tech</title>
+<meta name="description" content="Blog de NexoVector Tech: artículos sobre telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria y automatización.">
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -59,9 +59,9 @@
             <li><a class="dropdown-item" href="cursos.html#industria">Industria y Automatización</a></li>
           </ul>
         </li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="macro-proyectos.html">Macro-proyectos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
+        <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="contacto.html" id="ddContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddContacto">
@@ -72,7 +72,7 @@
           </ul>
         </li>
         <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-          <a class="btn-nav-cta" href="#registro">Registrarme a un evento</a>
+          <a class="btn-nav-cta" href="eventos.html">Registrarme a un evento</a>
         </li>
       </ul>
     </div>
@@ -80,79 +80,71 @@
 </nav>
 
 <header class="page-header container">
-  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Eventos</nav>
-  <span class="eyebrow">// Agenda NexoVector</span>
-  <h1>Eventos y actividades</h1>
-  <p class="section-lead">Conoce nuestros próximos eventos y regístrate para asistir.</p>
+  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Blog</nav>
+  <span class="eyebrow">// Ideas &amp; tendencias</span>
+  <h1>Blog</h1>
+  <p class="section-lead">Artículos técnicos sobre las áreas en las que trabajamos.</p>
 </header>
 
-<!-- ===== PRÓXIMOS EVENTOS ===== -->
 <section class="section">
   <div class="container">
-    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Próximos eventos</span></div>
-    <div class="row g-3">
-      <div class="col-lg-8 reveal">
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">14</span><span class="mon">Ago</span></div>
-          <div><h4 class="h5 mb-1">Webinar: Ciberseguridad en Infraestructura Crítica</h4><p class="text-muted-custom small mb-0">Modalidad virtual · 18:00 (GMT-5)</p></div>
-        </div>
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">02</span><span class="mon">Sep</span></div>
-          <div><h4 class="h5 mb-1">Taller práctico: Arquitecturas IoT para Industria 4.0</h4><p class="text-muted-custom small mb-0">Modalidad híbrida · Cupos limitados</p></div>
-        </div>
-        <div class="event-card">
-          <div class="event-date-block"><span class="day">20</span><span class="mon">Sep</span></div>
-          <div><h4 class="h5 mb-1">Foro: Telecomunicaciones y Ciudades Inteligentes</h4><p class="text-muted-custom small mb-0">Modalidad presencial</p></div>
+    <div class="blog-filters reveal">
+      <button class="filter-chip active" data-filter="todos">Todos</button>
+      <button class="filter-chip" data-filter="telecomunicaciones">Telecomunicaciones</button>
+      <button class="filter-chip" data-filter="ciberseguridad">Ciberseguridad</button>
+      <button class="filter-chip" data-filter="iot">IoT</button>
+      <button class="filter-chip" data-filter="ti">TI</button>
+      <button class="filter-chip" data-filter="industria">Industria</button>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="telecomunicaciones">
+          <div class="blog-thumb"><i class="bi bi-broadcast"></i></div>
+          <div class="blog-meta">TELECOMUNICACIONES · 5 min de lectura</div>
+          <h3>El futuro de las redes 5G en entornos industriales</h3>
+          <p>Cómo la conectividad de baja latencia está redefiniendo la automatización de procesos.</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FORMULARIO DE REGISTRO ===== -->
-<section class="section section-alt" id="registro">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 reveal">
-        <div class="node-divider"><span class="dot"></span><span class="eyebrow">Registro</span></div>
-        <h2 class="section-title">Formulario de registro a eventos</h2>
-        <p class="section-lead">Completa tus datos para reservar tu cupo en el evento de tu interés.</p>
-        <form class="form-nexo row g-3" data-validate novalidate>
-          <div class="col-md-6">
-            <label for="eName">Nombre completo</label>
-            <input type="text" class="form-control" id="eName" required minlength="3" placeholder="Tu nombre">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eEmail">Correo electrónico</label>
-            <input type="email" class="form-control" id="eEmail" required placeholder="correo@ejemplo.com">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eTel">Teléfono</label>
-            <input type="tel" class="form-control" id="eTel" required placeholder="+593 999 999 999">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-md-6">
-            <label for="eEmpresa">Empresa u organización</label>
-            <input type="text" class="form-control" id="eEmpresa" required minlength="2" placeholder="Nombre de tu empresa">
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-12">
-            <label for="eEvento">Evento al que deseas asistir</label>
-            <select class="form-select" id="eEvento" required>
-              <option value="">Selecciona un evento</option>
-              <option>Webinar: Ciberseguridad en Infraestructura Crítica — 14 Ago</option>
-              <option>Taller práctico: Arquitecturas IoT para Industria 4.0 — 02 Sep</option>
-              <option>Foro: Telecomunicaciones y Ciudades Inteligentes — 20 Sep</option>
-            </select>
-            <div class="invalid-feedback-inline"></div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn-nexo-primary">Confirmar registro</button>
-            <div class="form-success-msg">¡Registro confirmado! Te esperamos en el evento.</div>
-          </div>
-        </form>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="ciberseguridad">
+          <div class="blog-thumb"><i class="bi bi-shield-lock"></i></div>
+          <div class="blog-meta">CIBERSEGURIDAD · 6 min de lectura</div>
+          <h3>Buenas prácticas para proteger infraestructura crítica</h3>
+          <p>Un enfoque práctico para reducir riesgos en sistemas industriales conectados.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="iot">
+          <div class="blog-thumb"><i class="bi bi-diagram-3"></i></div>
+          <div class="blog-meta">IOT · 4 min de lectura</div>
+          <h3>IoT industrial: de los sensores a la toma de decisiones</h3>
+          <p>Claves para diseñar una arquitectura IoT escalable y segura.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="ti">
+          <div class="blog-thumb"><i class="bi bi-hdd-network"></i></div>
+          <div class="blog-meta">TI · 5 min de lectura</div>
+          <h3>Gobierno de TI: alineando tecnología y estrategia</h3>
+          <p>Por qué la gestión de infraestructura TI debe partir de los objetivos del negocio.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="industria">
+          <div class="blog-thumb"><i class="bi bi-gear-wide-connected"></i></div>
+          <div class="blog-meta">INDUSTRIA · 7 min de lectura</div>
+          <h3>Manufactura inteligente: automatización con propósito</h3>
+          <p>Cómo priorizar qué procesos automatizar primero en una planta industrial.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <div class="card-nexo blog-card" data-cat="telecomunicaciones">
+          <div class="blog-thumb"><i class="bi bi-broadcast-pin"></i></div>
+          <div class="blog-meta">TELECOMUNICACIONES · 4 min de lectura</div>
+          <h3>Cómo auditar la infraestructura de conectividad de tu empresa</h3>
+          <p>Una guía inicial para identificar cuellos de botella en tu red.</p>
+        </div>
       </div>
     </div>
   </div>
