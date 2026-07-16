@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Área de Consultoría | NexoVector Tech</title>
-<meta name="description" content="Áreas de consultoría de NexoVector Tech: telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria y automatización.">
+<title>NexoVector Tech | Consultoría Estratégica en Tecnología</title>
+<meta name="description" content="NexoVector Tech: consultoría estratégica en telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria & automatización.">
+
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,8 +28,9 @@
     <div class="collapse navbar-collapse" id="navMain">
       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="consultoria.html" id="ddConsultoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Área de Consultoría</a>
+          <a class="nav-link dropdown-toggle" href="consultoria.html" id="ddConsultoria" role="button" data-bs-toggle="dropdown" aria-expanded="false">Área de Consultoría</a>
           <ul class="dropdown-menu" aria-labelledby="ddConsultoria">
             <li><a class="dropdown-item" href="consultoria.html#telecomunicaciones"><i class="bi bi-broadcast me-2"></i>Telecomunicaciones</a></li>
             <li><a class="dropdown-item" href="consultoria.html#electronica"><i class="bi bi-cpu me-2"></i>Electrónica</a></li>
@@ -38,6 +40,7 @@
             <li><a class="dropdown-item" href="consultoria.html#industria"><i class="bi bi-gear-wide-connected me-2"></i>Industria y Automatización</a></li>
           </ul>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="oferta-laboral.html" id="ddEmpleo" role="button" data-bs-toggle="dropdown" aria-expanded="false">Oferta Laboral</a>
           <ul class="dropdown-menu" aria-labelledby="ddEmpleo">
@@ -49,6 +52,7 @@
             <li><a class="dropdown-item" href="oferta-laboral.html#industria">Industria y Automatización</a></li>
           </ul>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="cursos.html" id="ddCursos" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cursos Profesionales</a>
           <ul class="dropdown-menu" aria-labelledby="ddCursos">
@@ -60,9 +64,11 @@
             <li><a class="dropdown-item" href="cursos.html#industria">Industria y Automatización</a></li>
           </ul>
         </li>
+
         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="macro-proyectos.html">Macro-proyectos</a></li>
         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="contacto.html" id="ddContacto" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
           <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="ddContacto">
@@ -80,165 +86,209 @@
   </div>
 </nav>
 
-<!-- ===== PAGE HEADER ===== -->
-<header class="page-header container">
-  <nav class="breadcrumb-nexo mb-2"><a href="index.html">Inicio</a><span class="sep">/</span>Área de Consultoría</nav>
-  <span class="eyebrow">// Nuestros dominios técnicos</span>
-  <h1>Área de Consultoría</h1>
-  <p class="section-lead">Seis áreas de conocimiento integradas para acompañar la estrategia tecnológica de tu organización de punta a punta.</p>
+<!-- ===== HERO ===== -->
+<header class="hero container">
+  <div class="hero-copy">
+    <span class="eyebrow">// Consultoría estratégica en tecnología</span>
+    <h1 class="hero-tagline">Conectamos <span class="accent">visión tecnológica</span> con resultados de negocio.</h1>
+    <p class="hero-desc">NexoVector Tech acompaña a organizaciones e industrias con consultoría especializada en telecomunicaciones, electrónica, ciberseguridad, TI, IoT e industria &amp; automatización.</p>
+    <div class="hero-actions">
+      <a href="consultoria.html" class="btn-nexo-primary">Ver áreas de consultoría</a>
+      <a href="contacto.html" class="btn-nexo-outline">Hablar con un experto</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><b>6</b><span>Áreas de conocimiento</span></div>
+      <div class="stat"><b>360°</b><span>Enfoque estratégico</span></div>
+      <div class="stat"><b>1</b><span>Equipo experto, un solo nexo</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <canvas id="nodeCanvas" aria-hidden="true"></canvas>
+    <div class="logo-badge">
+      <img src="img/logo.svg" alt="Logo NexoVector Tech">
+    </div>
+  </div>
 </header>
 
-<!-- ===== ÁREAS ===== -->
-<section class="section">
+<!-- ===== MISIÓN Y VISIÓN ===== -->
+<section class="section" id="mision-vision">
   <div class="container">
-
-    <div class="area-block reveal" id="telecomunicaciones">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-broadcast"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Telecomunicaciones</h2>
-          <span class="tag-pill">Redes &amp; Conectividad</span>
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Misión &amp; Visión</span></div>
+    <div class="row g-4">
+      <div class="col-lg-6 reveal">
+        <div class="mv-card mision h-100">
+          <div class="mv-icon"><i class="bi bi-bullseye"></i></div>
+          <h3>Misión</h3>
+          <p class="text-muted-custom">Brindar consultoría estratégica de alto valor en telecomunicaciones, electrónica, ciberseguridad, tecnología de la información, IoT e industria &amp; automatización, integrando conocimiento técnico y visión de negocio para impulsar la transformación digital de nuestros clientes con soluciones seguras, escalables y sostenibles.</p>
         </div>
       </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Diseñamos, evaluamos y optimizamos infraestructura de telecomunicaciones para garantizar cobertura, capacidad y continuidad del servicio, desde redes de datos hasta enlaces inalámbricos y transmisión.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Diseño y dimensionamiento de redes</li>
-            <li>Auditoría de infraestructura de telecomunicaciones</li>
-            <li>Enlaces inalámbricos y transmisión de datos</li>
-            <li>Planes de continuidad y disponibilidad</li>
-          </ul>
+      <div class="col-lg-6 reveal">
+        <div class="mv-card vision h-100">
+          <div class="mv-icon"><i class="bi bi-eye"></i></div>
+          <h3>Visión</h3>
+          <p class="text-muted-custom">Ser la firma de consultoría tecnológica de referencia en la región, reconocida por conectar personas, procesos y tecnología a través de proyectos de alto impacto en ciudades inteligentes, industria 4.0 y ecosistemas digitales seguros.</p>
         </div>
       </div>
     </div>
-
-    <div class="area-block reveal" id="electronica">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-cpu"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Electrónica</h2>
-          <span class="tag-pill">Diseño &amp; Integración</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Asesoría en diseño, selección e integración de sistemas electrónicos aplicados a proyectos industriales, académicos y comerciales, con foco en confiabilidad y eficiencia energética.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Diseño de circuitos y prototipado</li>
-            <li>Selección de componentes y sistemas embebidos</li>
-            <li>Pruebas de calidad y confiabilidad</li>
-            <li>Eficiencia energética en sistemas electrónicos</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="ciberseguridad">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-shield-lock"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Ciberseguridad</h2>
-          <span class="tag-pill">Protección &amp; Continuidad</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Evaluamos riesgos, fortalecemos infraestructura crítica y acompañamos la implementación de buenas prácticas de seguridad de la información alineadas a estándares internacionales.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Análisis de vulnerabilidades y riesgos</li>
-            <li>Políticas y gobierno de seguridad de la información</li>
-            <li>Protección de infraestructura crítica</li>
-            <li>Planes de respuesta a incidentes</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="ti">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-hdd-network"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Tecnología de la Información</h2>
-          <span class="tag-pill">Arquitectura &amp; Gobierno TI</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Apoyamos la planificación y gobierno de la infraestructura tecnológica: arquitectura de sistemas, gestión de proyectos TI y alineación entre tecnología y objetivos estratégicos.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Arquitectura de sistemas e infraestructura</li>
-            <li>Gobierno y gestión de proyectos TI</li>
-            <li>Migración y modernización tecnológica</li>
-            <li>Continuidad de negocio y respaldo de datos</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="iot">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-diagram-3"></i></div>
-        <div>
-          <h2 class="h3 mb-1">IoT (Internet de las Cosas)</h2>
-          <span class="tag-pill">Sensórica &amp; Conectividad</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Diseñamos ecosistemas de dispositivos conectados: sensores, gateways y plataformas de monitoreo para captura y análisis de datos en tiempo real.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Arquitectura de soluciones IoT</li>
-            <li>Integración de sensores y dispositivos</li>
-            <li>Plataformas de monitoreo y visualización</li>
-            <li>Seguridad en dispositivos conectados</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="area-block reveal" id="industria">
-      <div class="area-head">
-        <div class="icon-wrap"><i class="bi bi-gear-wide-connected"></i></div>
-        <div>
-          <h2 class="h3 mb-1">Industria y Automatización</h2>
-          <span class="tag-pill">Manufactura Inteligente</span>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-7">
-          <p class="text-muted-custom">Acompañamos procesos de automatización industrial, integración de sistemas de control y adopción de manufactura inteligente para optimizar productividad y calidad.</p>
-        </div>
-        <div class="col-lg-5">
-          <ul class="check-list">
-            <li>Automatización de procesos industriales</li>
-            <li>Sistemas de control y supervisión (SCADA)</li>
-            <li>Integración con IoT industrial</li>
-            <li>Optimización de líneas de producción</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="section section-alt">
-  <div class="container text-center reveal">
-    <h2>¿Listo para llevar tu proyecto al siguiente nivel?</h2>
-    <p class="section-lead mx-auto">Conversemos sobre las necesidades tecnológicas de tu organización.</p>
-    <a href="contacto.html" class="btn-nexo-primary">Contactar a un experto</a>
+<!-- ===== CEO ===== -->
+<section class="section section-alt" id="ceo">
+  <div class="container">
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Liderazgo</span></div>
+    <div class="ceo-panel reveal">
+      <div class="ceo-photo-frame">
+        <i class="bi bi-person-badge" style="font-size:3.5rem;"></i>
+      </div>
+      <div>
+        <h2 class="ceo-name">Ing. Jean Carlo Cruz Fajardo, MSc.</h2>
+        <span class="ceo-title">CEO &amp; Consultor Principal — NexoVector Tech</span>
+        <p class="ceo-bio">Ingeniero con Maestría (MSc.) y experiencia como experto en telecomunicaciones, electrónica, ciberseguridad, tecnología de la información, IoT e industria &amp; automatización. Lidera equipos multidisciplinarios de consultoría orientados a diseñar soluciones tecnológicas seguras, eficientes y alineadas a los objetivos estratégicos de cada organización.</p>
+        <ul class="ceo-credentials">
+          <li>Ingeniero (Ing.) con Maestría (MSc.) en el área tecnológica</li>
+          <li>Experto en las 6 áreas de conocimiento de NexoVector Tech</li>
+          <li>Consultor en proyectos de telecomunicaciones, IoT e industria 4.0</li>
+          <li>Enfoque en ciberseguridad y automatización de procesos</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="https://www.linkedin.com/in/jean-carlo-cruz-fajardo-537061153/" target="_blank" rel="noopener" class="btn-nexo-outline btn-sm-nexo"><i class="bi bi-linkedin me-1"></i> LinkedIn</a>
+          <a href="https://portafoliojeancruz.framer.website/" target="_blank" rel="noopener" class="btn-nexo-outline btn-sm-nexo"><i class="bi bi-briefcase me-1"></i> Portafolio personal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO ===== -->
+<section class="section" id="video">
+  <div class="container">
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Conócenos</span></div>
+    <h2 class="section-title reveal">Video corporativo</h2>
+    <p class="section-lead reveal">Un vistazo a cómo trabajamos y a las áreas donde generamos valor para nuestros clientes.</p>
+    <div class="video-frame reveal">
+      <!-- Reemplaza VIDEO_ID por el ID del video de YouTube, o usa un <video> local (ver /video/README.txt) -->
+  
+<iframe src="https://www.youtube.com/embed/Yk2Q7jByiCo?t=9&feature=share" title="Video corporativo NexoVector Tech" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+
+        </div>
+  </div>
+</section>
+
+<!-- ===== ÁREAS DE CONOCIMIENTO ===== -->
+<section class="section section-alt" id="areas">
+  <div class="container">
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Especialización</span></div>
+    <h2 class="section-title reveal">Áreas de conocimiento</h2>
+    <p class="section-lead reveal">Seis dominios técnicos integrados bajo una sola estrategia de consultoría.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#telecomunicaciones" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-broadcast"></i></div>
+          <h3>Telecomunicaciones</h3>
+          <p>Redes, conectividad y despliegue de infraestructura de comunicaciones.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#electronica" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-cpu"></i></div>
+          <h3>Electrónica</h3>
+          <p>Diseño, integración y optimización de sistemas electrónicos.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#ciberseguridad" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-shield-lock"></i></div>
+          <h3>Ciberseguridad</h3>
+          <p>Protección de infraestructura crítica, datos y continuidad del negocio.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#ti" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-hdd-network"></i></div>
+          <h3>Tecnología de la Información</h3>
+          <p>Arquitectura de sistemas, infraestructura y gobierno de TI.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#iot" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-diagram-3"></i></div>
+          <h3>IoT</h3>
+          <p>Sensórica, conectividad e integración de dispositivos inteligentes.</p>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4 reveal">
+        <a href="consultoria.html#industria" class="card-nexo area-card d-block text-decoration-none">
+          <div class="icon-wrap"><i class="bi bi-gear-wide-connected"></i></div>
+          <h3>Industria y Automatización</h3>
+          <p>Automatización de procesos industriales y manufactura inteligente.</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO RÁPIDO ===== -->
+<section class="section" id="contacto-rapido">
+  <div class="container">
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Contacto</span></div>
+    <h2 class="section-title reveal">Hablemos de tu proyecto</h2>
+    <p class="section-lead reveal">Escríbenos por el canal que prefieras.</p>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-3 reveal">
+        <a class="contact-chip" href="mailto:nexovector.consultoria.tech@gmail.com">
+          <span class="chip-icon"><i class="bi bi-envelope"></i></span>
+          <span><small>Correo</small>nexovector.consultoria.tech@gmail.com</span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <a class="contact-chip" href="https://www.facebook.com/profile.php?id=100077255801380" target="_blank" rel="noopener">
+          <span class="chip-icon"><i class="bi bi-facebook"></i></span>
+          <span><small>Facebook</small>NexoVector Tech</span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <a class="contact-chip" href="https://www.linkedin.com/in/jean-carlo-cruz-fajardo-537061153/" target="_blank" rel="noopener">
+          <span class="chip-icon"><i class="bi bi-linkedin"></i></span>
+          <span><small>LinkedIn</small>Jean Carlo Cruz Fajardo</span>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-3 reveal">
+        <a class="contact-chip" href="https://portafoliojeancruz.framer.website/" target="_blank" rel="noopener">
+          <span class="chip-icon"><i class="bi bi-briefcase"></i></span>
+          <span><small>Portafolio</small>Portafolio personal</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORO / BANDEJA DE MENSAJES ===== -->
+<section class="section section-alt" id="foro">
+  <div class="container">
+    <div class="node-divider reveal"><span class="dot"></span><span class="eyebrow">Comunidad</span></div>
+    <h2 class="section-title reveal">Bandeja de mensajes</h2>
+    <p class="section-lead reveal">Déjanos tu comentario, pregunta o sugerencia. Tu mensaje se guarda en este navegador.</p>
+
+    <div class="forum-box reveal" data-forum-id="home">
+      <form class="forum-form form-nexo row g-3" novalidate>
+        <div class="col-md-4">
+          <label for="fName">Nombre</label>
+          <input type="text" class="form-control" id="fName" name="forum-name" placeholder="Tu nombre" required>
+          <div class="invalid-feedback-inline">Escribe tu nombre.</div>
+        </div>
+        <div class="col-md-8">
+          <label for="fMsg">Mensaje</label>
+          <input type="text" class="form-control" id="fMsg" name="forum-message" placeholder="Escribe tu comentario..." required>
+          <div class="invalid-feedback-inline">El mensaje debe tener al menos 5 caracteres.</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn-nexo-primary">Publicar comentario</button>
+          <div class="form-success-msg">¡Gracias! Tu comentario fue publicado.</div>
+        </div>
+      </form>
+      <div class="forum-list"></div>
+    </div>
   </div>
 </section>
 
